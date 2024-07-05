@@ -1,72 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+        }
+    </style>
+    <style>
+        .container {
+            position: relative;
+            height: 40vh;
+        }
+
+        .button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 20px;
+        }
+    </style>
 </head>
+
 <body>
     <form>
         <div style="background-color: rgb(240, 237, 237);">
+            <table>
+                <thead>
+                    <tr>
+                        <h1>Code</h1>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select style="width: 200px; border-radius: 5px;" class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>N</option>
+                                <option value="1">N</option>
+                            </select>
+                        </th>
+                        <td>
+                            <select style="width: 200px; border-radius: 5px;" class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>Y</option>
+                                <option value="1">Y</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="width: 200px; border-radius: 5px;" class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>수정일</option>
+                                <option value="1">수정일</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date"  style="width: 200px; height:15px;">
+                        </td>
+                        <td>
+                            <input type="date" style="width: 200px; height:15px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select style="width: 200px; border-radius: 5px;" class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>N</option>
+                                <option value="1">N</option>
+                            </select>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="검색어"
+                                style="border-radius: 5px; border: 1px solid grey; padding: 5px; box-sizing: border-box; width: 200px; height: 20px;">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <hr>
+        <tr>
+            <th>Total: 171</th>
+            <td>
+                <span style="float:right;">
+                    <select style="width: 140px; height: 25px;">
+                        <option>5</option>
+                    </select></span>
+            </td>
+        </tr>
         <table>
             <thead>
                 <tr>
-                    <h1>Code</h1>
-                </tr>
-                <tr>
-                    <th>
-                        <select style="width: 200px; height:28px;"  class="form-select form-select-sm" aria-label="Small select example">
-                            <option selected>N</option>
-                            <option value="1">N</option>
-                        </select>
-                    </th>
-                    <td>
-                        <select style="width: 200px;" class="form-select form-select-sm" aria-label="Small select example">
-                            <option selected>Y</option>
-                            <option value="1">Y</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select style="width: 200px;" class="form-select form-select-sm" aria-label="Small select example">
-                            <option selected>수정일</option>
-                            <option value="1">수정일</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="date" style="width: 200px; height:15px;">
-                    </td>
-                    <td>
-                        <input type="date" style="width: 200px; height:15px;">
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <select style="width: 200px;" class="form-select form-select-sm" aria-label="Small select example">
-                            <option selected>N</option>
-                            <option value="1">N</option>
-                        </select>
-                    </th>
-                    <td>
-                        <input type="text" placeholder="검색어"  style="border-radius: 5px; border: 1px solid grey; padding: 5px; box-sizing: border-box; width: 200px; height: 20px;">
-                    </td>
-                </tr> 
-            </thead>
-        </table>
-    </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Total: 171</th>
-                    <td>
-                        <span style="float:right;">
-                        <select style="width: 140px; height: 25px;">
-                            <option>5</option>
-                        </select></span>
-                    </td>
+                    <th><input type="checkbox"></th>
+                    <td>#</td>
+                    <td>코드그룹 코드</td>
+                    <td>코드그룹 이름</td>
+                    <td>코드</td>
+                    <td>대체 코드</td>
+                    <td>코드 이름</td>
+                    <td>코드 이름(영문)</td>
+                    <td>사용</td>
+                    <td>순서</td>
+                    <td>등록일</td>
+                    <td>수정일</td>
                 </tr>
             </thead>
-
+            <tbody>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>171</td>
+                    <td>57</td>
+                    <td>테테테</td>
+                    <td>278</td>
+                    <td></td>
+                    <td><span style="color: blue;">ㅁㄴㅇㄹ</span></td>
+                    <td></td>
+                    <td>Y</td>
+                    <td>1</td>
+                    <td>2023-10-12 16:02:31</td>
+                    <td>2023-10-12 16:02:31</td>
+                    <hr>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>170</td>
+                    <td>33</td>
+                    <td>로그인.로그인UI</td>
+                    <td>272</td>
+                    <td></td>
+                    <td><span style="color: blue;">사용자</span></td>
+                    <td></td>
+                    <td>Y</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>169</td>
+                    <td>33</td>
+                    <td>로그인.로그인UI</td>
+                    <td>273</td>
+                    <td></td>
+                    <td><span style="color: blue;">관리자</span></td>
+                    <td></td>
+                    <td>Y</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>168</td>
+                    <td>32</td>
+                    <td>qna.타입</td>
+                    <td>266</td>
+                    <td></td>
+                    <td><span style="color: blue;">기타</span></td>
+                    <td></td>
+                    <td>Y</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>167</td>
+                    <td>331</td>
+                    <td>qna.상태</td>
+                    <td>262</td>
+                    <td></td>
+                    <td><span style="color: blue;">미확인</span></td>
+                    <td></td>
+                    <td>Y</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
         </table>
+        <tr>
+            <div class="center">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>></button>
+            </div>
+        </tr>
+        <tr>
+            <div class="container">
+                <button class="button" button type="button"
+                    onclick="location.href='http://127.0.0.1:5500/tr/form2.tr.html'">버튼</button>
+            </div>
+        </tr>
     </form>
 </body>
+
 </html>

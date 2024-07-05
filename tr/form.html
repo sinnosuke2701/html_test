@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            height: 40vh;
+        }
+
+        .button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 20px;
+        }
+    </style>
 </head>
+
 <body>
     <form>
         <table border="0">
@@ -21,16 +36,16 @@
                             <option>N</option>
                         </select>
                     </th>
-                        <td>
-                            <select style="width:150px; height: 30px;">
-                                <option>Y</option>
-                            </select>
-                            <select style="width:150px; height: 30px;">
-                                <option>수정일</option>
-                            </select>
-                            <input type="date" style="width:150px; height: 30px;">
-                            <input type="date" style="width:150px; height: 30px;">
-                        </td>
+                    <td>
+                        <select style="width:150px; height: 30px;">
+                            <option>Y</option>
+                        </select>
+                        <select style="width:150px; height: 30px;">
+                            <option>수정일</option>
+                        </select>
+                        <input type="date" style="width:150px; height: 30px;">
+                        <input type="date" style="width:150px; height: 30px;">
+                    </td>
                 </tr>
                 <tr>
                     <th>
@@ -38,11 +53,12 @@
                             <option>검색구분</option>
                         </select>
                     </th>
-                    <td><div>
-                        <input type="text" style="width:145px; height: 26px;" placeholder="검색어">
-                        <input type="button" value="검색" style="width:50px;">
+                    <td>
+                        <div>
+                            <input type="text" style="width:145px; height: 26px;" placeholder="검색어">
+                            <input type="button" value="검색" style="width:50px;">
 
-                        <button onClick="window.location.reload()" style="width:50px;">F5</button>
+                            <button onClick="window.location.reload()" style="width:50px;">F5</button>
                     </td>
                 </tr>
             </tbody>
@@ -54,9 +70,9 @@
             <th>Total:171</th>
             <td>
                 <span style="float:right;">
-                <select style="width: 140px; height: 25px;">
-                    <option>5</option>
-                </select></span>
+                    <select style="width: 140px; height: 25px;">
+                        <option>5</option>
+                    </select></span>
             </td>
         </tr>
         <table border="0">
@@ -90,7 +106,7 @@
                     <td>1</td>
                     <td>2023-10-12 16:02:31</td>
                     <td>2023-10-12 16:02:31</td>
-                <hr>
+                    <hr>
                 </tr>
                 <tr>
                     <th><input type="checkbox"></th>
@@ -150,41 +166,31 @@
                 </tr>
             </tbody>
         </table>
-                <tr>
-                    <style>
-                        .center {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 5vh;
-                        }
-                    </style>
-                    <div class="center">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button>></button>
-                    </div>
-                </tr>
-                <tr>
-                    <style>
-                        .container {
-                            position: relative;
-                            height: 40vh;
-                        }
-                        .button {
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                            margin: 20px;
-                        }
-                    </style>
-                    <div class="container">
-                        <button class="button" button type="button" onclick="location.href='http://127.0.0.1:5500/tr/list.html'">버튼</button>
-                    </div>
-                </tr>
+        <tr>
+            <style>
+                .center {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 5vh;
+                }
+            </style>
+            <div class="center">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>></button>
+            </div>
+        </tr>
+        <tr>
+            <div class="container">
+                <button class="button" button type="button"
+                    onclick="location.href='http://127.0.0.1:5500/tr/list.html'">버튼</button>
+            </div>
+        </tr>
     </form>
 </body>
+
 </html>

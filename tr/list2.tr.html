@@ -7,6 +7,7 @@
 </head>
 <body>
     <form>
+        <div style="background-color: rgb(171, 166, 166);">
         <table>
             <thead>
                 <tr>
@@ -14,7 +15,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <select style="width: 200px;" class="form-select form-select-sm" aria-label="Small select example">
+                        <select style="width: 200px; height:28px;"  class="form-select form-select-sm" aria-label="Small select example">
                             <option selected>N</option>
                             <option value="1">N</option>
                         </select>
@@ -46,24 +47,23 @@
                         </select>
                     </th>
                     <td>
-                        <input type="text"  placeholder="검색어" style="border-radius: 5px; border: 1px solid rgb(170, 167, 167); padding: 5px; box-sizing: border-box;">
+                        <input type="text" placeholder="검색어"  style="border-radius: 5px; border: 1px solid grey; padding: 5px; box-sizing: border-box; width: 200px; height: 20px;">
                     </td>
-                </tr>
+                </tr> 
+            </thead>
+        </table>
+    </div>
+        <table>
+            <thead>
                 <tr>
                     <th>Total: 171</th>
+                    <td>
+                        <span style="float:right;">
+                        <select style="width: 140px; height: 25px;">
+                            <option>5</option>
+                        </select></span>
+                    </td>
                 </tr>
-                <tr>
-                    <th>
-                        <input type="text" style="border-radius: 5px; border: 5px solid rgb(170, 167, 167); padding: 5px; box-sizing: border-box;">
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>
-                        <input type="text" style="border-radius: 5px; border: 1px solid grey; padding: 5px; box-sizing: border-box;">
-                    </th>
-                </tr>
-
             </thead>
         </table>
     </form>
